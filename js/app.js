@@ -1,9 +1,8 @@
 const gameBoard = document.querySelector("#gameboard");
-const playerDisplay = document.querySelector("#player");
 const infoDisplay = document.querySelector("#info-display");
 const width = 8;
 let playerTurn = "white";
-playerDisplay.textContent = playerTurn;
+document.querySelector("#player").textContent = playerTurn;
 
 const startPieces = [
     rook, knight, bishop, queen, king, bishop, knight, rook,
@@ -57,13 +56,13 @@ const changePlayer = () => {
         allSquares.forEach((square, i) =>
             square.setAttribute("square-id", i))
         playerTurn = "black";
-        playerDisplay.textContent =playerTurn;
+        document.querySelector("#player").textContent =playerTurn;
     }
     else{
         allSquares.forEach((square, i) =>
             square.setAttribute("square-id", width**2 - 1 - i))
         playerTurn = "white";
-        playerDisplay.textContent =playerTurn;
+        document.querySelector("#player").textContent =playerTurn;
     }
 }
 
