@@ -1,0 +1,63 @@
+body{
+    background-image: url(../img/wood_pattern.png);
+}
+
+h1{
+    text-align: center;
+}
+
+#info-display{
+    text-align: center;
+}
+
+#gameboard {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px;
+    border-color: rgba(65, 65, 65);
+    border-style: ridge;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.square svg {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.black {
+    fill: black;
+}
+
+.white {
+    fill: white;
+}
